@@ -11,12 +11,12 @@ module VerticaHistory
         host: Rails.configuration.vertica_host,
         user: Rails.configuration.vertica_user,
         password: Rails.configuration.vertica_password,
-        ssl: Rails.configuration.vertica_ssl,
-        port: Rails.configuration.vertica_port,
+        ssl: Rails.configuration.vertica_ssl || true,
+        port: Rails.configuration.vertica_port || 5433,
         database: Rails.configuration.vertica_database,
         role: Rails.configuration.vertica_role,
-        search_path: Rails.configuration.vertica_search_path,
-        row_style: Rails.configuration.vertica_row_style
+        search_path: Rails.configuration.vertica_search_path || nil,
+        row_style: Rails.configuration.vertica_row_style || :hash
       }
 
       schema = Rails.configuration.vertica_schema
