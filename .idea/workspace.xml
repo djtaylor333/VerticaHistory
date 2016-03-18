@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d105ca-e478-49d8-86ef-72aee4473625" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vertica_history.iml" afterPath="$PROJECT_DIR$/.idea/vertica_history.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/vertica_history/vertica_history_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/vertica_history/vertica_history_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rails_admin/config/actions/vertica_history.rb" afterPath="$PROJECT_DIR$/lib/rails_admin/config/actions/vertica_history.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/vertica_history/engine.rb" afterPath="$PROJECT_DIR$/lib/vertica_history/engine.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vertica_history.gemspec" afterPath="$PROJECT_DIR$/vertica_history.gemspec" />
     </list>
     <ignored path="vertica_history.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vertica_history_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vertica_history_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/vertica_history/vertica_history_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.079822615">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/vertica_history/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.8">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -71,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vertica_history.gemspec" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vertica_history.gemspec" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vertica_history.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2195122">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -112,11 +130,12 @@
         <option value="$PROJECT_DIR$/app/views/vertica_history/vertica_history/view_history.html.erb" />
         <option value="$PROJECT_DIR$/app/views/vertica_history/vertica_history/index.html.erb" />
         <option value="$PROJECT_DIR$/lib/rails_admin/custom_actions/vertica_history.rb" />
-        <option value="$PROJECT_DIR$/vertica_history.gemspec" />
         <option value="$PROJECT_DIR$/app/controllers/vertica_history/vertica_history_controller.rb" />
         <option value="$PROJECT_DIR$/lib/rails_admin/config/actions/vertica_history.rb" />
         <option value="$PROJECT_DIR$/lib/vertica_history/engine.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/vertica_history.gemspec" />
       </list>
     </option>
   </component>
@@ -126,7 +145,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="1985" />
     <option name="y" value="-1056" />
     <option name="width" value="1855" />
     <option name="height" value="1056" />
@@ -420,7 +439,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-1056" width="1855" height="1056" extended-state="6" />
+    <frame x="1985" y="-1056" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -532,14 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vertica_history.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/vertica_history/engine.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -550,8 +561,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/vertica_history/vertica_history_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.079822615">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vertica_history/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vertica_history.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2195122">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding />
         </state>
       </provider>

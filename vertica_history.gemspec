@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = VerticaHistory::VERSION
   s.authors     = ["David Taylor"]
   s.email       = ["djtaylor333@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = ""
   s.summary     = "Gem to connect rails admin to Vertica to see history of any record"
 
   s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.md"]
