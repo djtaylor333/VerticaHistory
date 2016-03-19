@@ -11,5 +11,17 @@ gemspec
 # your gem to rubygems.org.
 
 # To use a debugger
-# gem 'byebug', group: [:development, :test]
+# gem 'byebug', group: [:development, :test]  s.add_dependency 'sprockets'
+  gem 'sass-rails'
+  gem 'bootstrap-sass', '~> 3'
+  gem 'coffee-script'
+  gem 'sass', '~> 3.2'
+  gem 'jquery-rails'
+  gem 'sprockets-rails'
+  gem 'uglifier'
+  gem 'yui-compressor'
+  gem 'compass-rails'
+  gem 'handlebars_assets'
+  gem 'autoprefixer-rails'
+  gem  'turbolinks'
 

@@ -1,7 +1,7 @@
 <h1>Select Attributes for Vertica History for <%= @model %> <%= @id %></h1>
 <div>Select Attributes you want to see in the table for the history of the records in vertica</div>
 
-<%= form_for(@model.to_s.to_sym, url:{:controller=>'admin/vertica_history', :action=>'view_history'}, method: 'get', html: { class: 'form-horizontal' }) do |f| %>
+<%= form_for(@model.to_s.to_sym, url:{:controller=>'/vertica_history/vertica_history', :action=>'view_history'}, method: 'get', html: { class: 'form-horizontal' }) do |f| %>
 
   <% @columns.each do |key| %>
     <div id=<%= key %>>

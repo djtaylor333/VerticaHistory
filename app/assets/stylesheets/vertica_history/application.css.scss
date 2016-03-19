@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+*/
+
+@import "compass";
+@import "compass/css3/border-radius";
+@import "compass/typography/text/ellipsis";
+@import "compass/css3/opacity";
+
+
+@import "colors";
+@import "bootstrap-overrides";
+
+@import "compass/reset";
+@import "bootstrap";
+@import "bootstrap/mixins";
+@import "bootstrap/popovers";
+
+@import "scaffolds";
+@import "compass/utilities/sprites";
+@import "components";
+@import "helpers";
+
+
+
+$popover-arrow-color: #e6e6e6;
+$popover-arrow-outer-color: $button-border-gray;
+
+.key-placeholders {
+  text-transform: uppercase;
+
+  &.placeholder {
+    text-transform: none;
+  }
+
+  &::-webkit-input-placeholder {
+    text-transform: none;
+  }
+  &:-moz-placeholder {
+    // old firefox versions 4-18
+    text-transform: none;
+  }
+  &::-moz-placeholder {
+    text-transform: none;
+  }
+  &:-ms-input-placeholder {
+    text-transform: none;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.ellipsis {
+  @include ellipsis;
+}
+
+.errors {
+  color: $error-red;
+}
