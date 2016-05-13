@@ -1,0 +1,17 @@
+<%= form_for(@model.to_s.to_sym, url: { :controller => '/vertica_history/vertica_history', :action => 'view_history' }, method: 'get', html: { class: 'form-horizontal' }) do |f| %>
+
+  <% @all_columns.each do |key| %>
+    <div id=<%= key %>>
+      <li style="list-style-type: none;">
+        <%= check_box_tag 'attribute-keys[]', key, checked = @columns.include?(key) %>
+        <%= h key %>
+      </li>
+    </div>
+  <% end %>
+
+  <div class="btn btn-info select-all-btn">Select All</div>
+
+  <%= f.submit('Change Attributes', class: 'btn btn-primary') %>
+
+<% end %>
+

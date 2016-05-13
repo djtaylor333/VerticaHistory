@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>VerticaHistory</title>
-  <%= stylesheet_link_tag    "vertica_history/application", media: "all" %>
-  <%= javascript_include_tag "vertica_history/application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>VerticaHistory</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "vertica_history/application", media: "all" %>
+  </head>
 
-<%= yield %>
-
-</body>
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <%= javascript_include_tag "vertica_history/application" %>
+  </body>
 </html>

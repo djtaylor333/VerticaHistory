@@ -192,6 +192,7 @@ DEPENDENCIES
   coffee-script
   handlebars_assets
   jquery-rails
+  sass-rails (>= 3.2)
   sprockets-rails
   sqlite3
   turbolinks

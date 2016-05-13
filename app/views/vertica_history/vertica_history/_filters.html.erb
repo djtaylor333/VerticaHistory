@@ -1,0 +1,22 @@
+<%= form_for(@model.to_s.to_sym, url: { :controller => '/vertica_history/vertica_history', :action => 'view_history' }, method: 'get', html: { class: 'form-inline' }) do |f| %>
+
+  <h3>Filters</h3>
+
+  <div class="form-group">
+    <%= text_field_tag :filter_column, nil, placeholder: 'Enter filter value...', class: 'form-control' %>
+    <%= select_tag :filter_field, options_for_select(@columns), :include_blank => true, class: 'form-control' %>
+  </div>
+
+  <%= f.submit('Update/Filter Query', class: 'btn btn-primary') %>
+<% end %>
+
+<% if @query_hash.present? %>
+  <h3>Current Filters:</h3>
+  <% @query_hash.each do |col, val| %>
+    <p><%= col %> = <%= val %></p>
+  <% end %>
+
+  <%= form_for(@model.to_s.to_sym, url: { :controller => '/vertica_history/vertica_history', :action => 'view_history' }, method: 'get', html: { class: 'form-horizontal' }) do |f| %>
+    <%= f.submit('Clear Filters', class: 'btn btn-primary') %>
+  <% end %>
+<% end %>
