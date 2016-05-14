@@ -1,17 +1,22 @@
-<%= form_for(@model.to_s.to_sym, url: { :controller => '/vertica_history/vertica_history', :action => 'view_history' }, method: 'get', html: { class: 'form-horizontal' }) do |f| %>
+<%= form_for(@model.to_s.to_sym, url: { :controller => '/vertica_history/vertica_history', :action => 'view_history' }, method: 'get', html: { class: 'form-inline attributes-select-form' }) do |f| %>
+
+  <div class="checkbox">
+    <label class="btn btn-default" style="padding: 0 10px">
+      <input class="select-all-btn" type="checkbox" <%  'checked' if @all_columns == @columns %> /> Select All
+    </label>
+  </div>
 
   <% @all_columns.each do |key| %>
-    <div id=<%= key %>>
-      <li style="list-style-type: none;">
+    <div class="checkbox attribute-checkbox" id="<%= key %>">
+      <label>
         <%= check_box_tag 'attribute-keys[]', key, checked = @columns.include?(key) %>
         <%= h key %>
-      </li>
+      </label>
     </div>
   <% end %>
 
-  <div class="btn btn-info select-all-btn">Select All</div>
-
-  <%= f.submit('Change Attributes', class: 'btn btn-primary') %>
-
+  <br /><br />
+  <%= f.submit(action_button, class: 'btn btn-primary') %>
+  <br /><br />
 <% end %>
 

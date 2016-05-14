@@ -46,3 +46,24 @@ th {
 .alert p {
   padding-top: 10px;
 }
+
+.pagination {
+  .page {
+    text-align: center;
+    padding: 6px;
+
+    border-radius: 4px;
+    &.current {
+      background-color: $brand-primary;
+      color: #fff;
+      margin-right: 4px;
+      padding: 6px 8px 6px 10px;
+    }
+  }
+  .next, .last {
+    margin-left: 5px;
+  }
+ .prev {
+    margin-left: 5px;
+  }
+ }
