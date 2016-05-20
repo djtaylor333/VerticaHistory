@@ -3,8 +3,8 @@
   <h3>Filters</h3>
 
   <div class="form-group">
+    <%= select_tag :filter_field, options_for_select(@columns), :include_blank => false, class: 'form-control' %>
     <%= text_field_tag :filter_column, nil, placeholder: 'Enter filter value...', class: 'form-control' %>
-    <%= select_tag :filter_field, options_for_select(@columns), :include_blank => true, class: 'form-control' %>
   </div>
 
   <%= f.submit('Update/Filter Query', class: 'btn btn-primary') %>
