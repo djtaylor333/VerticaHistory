@@ -16,20 +16,8 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4"
-  s.add_dependency "rails_admin", "~> 0.7"
-  s.add_dependency 'sprockets'
-  s.add_dependency 'sass-rails'
-  s.add_dependency 'bootstrap-sass', '~> 3'
-  s.add_dependency 'coffee-script'
-  s.add_dependency 'sass', '~> 3.2'
-  s.add_dependency 'jquery-rails'
-  s.add_dependency 'sprockets-rails'
-  s.add_dependency 'uglifier'
-  s.add_dependency 'yui-compressor'
-  s.add_dependency 'handlebars_assets'
-  s.add_dependency 'autoprefixer-rails'
-  s.add_dependency 'turbolinks'
-  s.add_dependency 'vertica'
+  s.add_dependency "rails_admin", ">= 0.6"
+
 
   s.add_development_dependency "sqlite3"
 end

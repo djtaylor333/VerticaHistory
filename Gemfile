@@ -12,8 +12,12 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]  s.add_dependency 'sprockets'
+gem 'sprockets'
+gem 'sass-rails'
 gem 'bootstrap-sass', '~> 3'
 gem 'coffee-script'
+gem 'sass', '~> 3.2'
+gem 'jquery-rails'
 gem 'sprockets-rails'
 gem 'uglifier'
 gem 'yui-compressor'
@@ -21,5 +25,4 @@ gem 'handlebars_assets'
 gem 'autoprefixer-rails'
 gem 'turbolinks'
 gem 'vertica'
-gem 'sass-rails', '>= 3.2'
 
