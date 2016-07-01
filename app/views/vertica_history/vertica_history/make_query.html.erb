@@ -1,0 +1,8 @@
+<h1>Create a query that you want to submit to vertica for this stack</h1>
+
+<%= form_tag({ :controller => '/vertica_history/vertica_history', :action => 'query_results' }, method: 'post', html: { class: 'form-inline attributes-select-form' }) do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<div class="pull-left"><%= link_to "Cancel", "/rails_admin/" %></div>

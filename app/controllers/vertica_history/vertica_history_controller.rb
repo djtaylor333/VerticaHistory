@@ -1,12 +1,14 @@
 module VerticaHistory
   class VerticaHistoryController < ApplicationController
     # before_filter { |c| c.authorize_ability :can_edit }
-    before_filter :fetch_columns
+    # before_filter :fetch_columns, only: [:index, :view_history]
 
     def index
+      fetch_columns
     end
 
     def view_history
+      fetch_columns
       connection_configurations = {
         host: Rails.configuration.vertica_host,
         user: Rails.configuration.vertica_user,
@@ -111,11 +113,39 @@ module VerticaHistory
       redirect_to "/rails_admin/#{@model}/#{id}"
     end
 
+
+    def make_query
+      p "hi ************"
+    end
+
+    def query_results
+      p "here ************"
+      connection_configurations = {
+        host: Rails.configuration.vertica_host,
+        user: Rails.configuration.vertica_user,
+        password: Rails.configuration.vertica_password,
+        ssl: Rails.configuration.vertica_ssl || true,
+        port: Rails.configuration.vertica_port || 5433,
+        database: Rails.configuration.vertica_database,
+        role: Rails.configuration.vertica_role,
+        search_path: Rails.configuration.vertica_search_path || nil,
+        row_style: Rails.configuration.vertica_row_style || :hash
+      }
+
+      puts params.inspect
+
+      connection = Vertica.connect(connection_configurations)
+      # result = connection.query("")
+      connection.close
+    end
+
     def fetch_columns
+      p params
       @id = params['id']
       @model ||= params['class_name'].camelize.constantize
       @columns = @model.columns.map { |c| c.name }
       @all_columns = @model.columns.map { |c| c.name }
     end
   end
+
 end

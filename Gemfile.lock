@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    vertica_history (1.0.2)
+    vertica_history (1.0.3)
       rails (~> 4)
       rails_admin (>= 0.6)
 
@@ -60,7 +60,7 @@ GEM
     concurrent-ruby (1.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
-    font-awesome-rails (4.6.3.0)
+    font-awesome-rails (4.6.3.1)
       railties (>= 3.2, < 5.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -193,4 +193,4 @@ DEPENDENCIES
   yui-compressor
 
 BUNDLED WITH
-   1.11.2
+   1.12.3
