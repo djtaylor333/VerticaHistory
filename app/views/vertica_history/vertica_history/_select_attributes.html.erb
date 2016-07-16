@@ -16,7 +16,11 @@
   <% end %>
 
   <br /><br />
-  <%= f.submit(action_button, class: 'btn btn-primary') %>
+  <div class="pull-left btn-group">
+    <%= f.submit(action_button, class: 'btn btn-primary') %>
+    <%= link_to "Cancel", "/rails_admin/#{@model}/#{@id}", { class: 'btn btn-default' } %>
+    <%= link_to "Write Vertica Query", "/vertica_history/vertica_history_query", { class: 'btn btn-default' } %>
+  </div>
   <br /><br />
 <% end %>
 

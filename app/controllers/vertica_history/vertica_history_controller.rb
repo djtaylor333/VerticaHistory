@@ -115,11 +115,9 @@ module VerticaHistory
 
 
     def make_query
-      p "hi ************"
     end
 
     def query_results
-      p "here ************"
       connection_configurations = {
         host: Rails.configuration.vertica_host,
         user: Rails.configuration.vertica_user,
@@ -132,15 +130,15 @@ module VerticaHistory
         row_style: Rails.configuration.vertica_row_style || :hash
       }
 
-      puts params.inspect
-
       connection = Vertica.connect(connection_configurations)
-      # result = connection.query("")
+      result = connection.query("#{params[:q]}")
+      @q = params[:q]
+      @columns = result.columns.map { |x| x.name }
+      @rows = result.rows
       connection.close
     end
 
     def fetch_columns
-      p params
       @id = params['id']
       @model ||= params['class_name'].camelize.constantize
       @columns = @model.columns.map { |c| c.name }

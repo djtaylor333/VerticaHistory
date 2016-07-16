@@ -2,8 +2,3 @@
 <div>Select Attributes you want to see in the table for the history of the records in vertica</div>
 
 <%= render partial: 'select_attributes', locals: { action_button: 'View History' } %>
-
-<div class="pull-left"><%= link_to "Cancel", "/rails_admin/#{@model}/#{@id}" %></div>
-<br></br>
-<div class="pull-left"><%= link_to "Write Vertica Query", "/vertica_history/vertica_history_query" %></div>
-</div>

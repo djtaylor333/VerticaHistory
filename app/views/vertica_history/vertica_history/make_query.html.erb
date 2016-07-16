@@ -2,7 +2,10 @@
 
 <%= form_tag({ :controller => '/vertica_history/vertica_history', :action => 'query_results' }, method: 'post', html: { class: 'form-inline attributes-select-form' }) do %>
   <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
+  <%= text_area_tag(:q, nil, {rows:'10', class: 'form-control'}) %>
+  <br>
+  <div class="btn-group">
+    <%= submit_tag("Search", {class: 'btn btn-primary'}) %>
+    <%= link_to "Cancel", "/rails_admin/", { class: 'btn btn-default' } %>
+  </div>
 <% end %>
-<div class="pull-left"><%= link_to "Cancel", "/rails_admin/" %></div>
