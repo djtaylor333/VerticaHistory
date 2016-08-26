@@ -3,6 +3,11 @@
 <%= form_tag({ :controller => '/vertica_history/vertica_history', :action => 'query_results' }, method: 'post', html: { class: 'form-inline attributes-select-form' }) do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_area_tag(:q, nil, {rows:'10', class: 'form-control'}) %>
+  <br>Click schema below to append it to your query</br>
+  <p>
+  <% @other_schemas.each do |schema| %>
+      <button type="button" onclick="appendNewText('<%=schema%>')" class="btn btn-info"><%=schema%></button>
+  <% end %>
   <br>
   <div class="btn-group">
     <%= submit_tag("Search", {class: 'btn btn-primary'}) %>

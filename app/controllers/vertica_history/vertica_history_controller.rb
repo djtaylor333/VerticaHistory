@@ -115,6 +115,7 @@ module VerticaHistory
 
 
     def make_query
+      @other_schemas = Rails.configuration.other_vertica_schemas || nil
     end
 
     def query_results
@@ -145,5 +146,4 @@ module VerticaHistory
       @all_columns = @model.columns.map { |c| c.name }
     end
   end
-
 end
