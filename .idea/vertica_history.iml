@@ -9,11 +9,7 @@
       </configuration>
     </facet>
     <facet type="gem" name="Ruby Gem">
-      <configuration>
-        <option name="GEM_APP_ROOT_PATH" value="$MODULE_DIR$" />
-        <option name="GEM_APP_TEST_PATH" value="$MODULE_DIR$/test" />
-        <option name="GEM_APP_LIB_PATH" value="$MODULE_DIR$/lib" />
-      </configuration>
+      <configuration />
     </facet>
   </component>
   <component name="ModuleRunConfigurationManager">
